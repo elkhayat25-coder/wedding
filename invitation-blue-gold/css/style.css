@@ -1,0 +1,366 @@
+/*====================================
+
+        CSS Variables
+
+====================================*/
+
+:root{
+
+    --primary-color:#1D3557;
+
+    --secondary-color:#F6F1EB;
+
+    --text-color:#555555;
+
+    --white-color:#FFFFFF;
+
+}
+
+
+
+/*====================================
+
+        Global Styles
+
+====================================*/
+
+body{
+
+    background:var(--secondary-color);
+
+}
+
+
+
+/*====================================
+            Website Container
+====================================*/
+
+.website-container{
+
+    width:100%;
+    min-height:100vh;
+
+}
+
+/*====================================
+            Landing Page
+====================================*/
+
+.landing-page{
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("../assets/images/landing-background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+/*====================================
+        Landing Page Overlay
+====================================*/
+
+.landing-page-overlay{
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(255,255,255,.45);
+
+}
+
+/*====================================
+        Landing Page Container
+====================================*/
+
+.landing-page-container{
+
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+/*====================================
+        Landing Page Title
+====================================*/
+
+.landing-page-title{
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:14px;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    color:var(--text-color);
+
+    margin-bottom:25px;
+
+}
+
+
+/*====================================
+            Couple Names
+====================================*/
+
+.couple-names{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:90px;
+
+    font-weight:500;
+
+    line-height:1.1;
+
+    color:var(--primary-color);
+
+    margin-bottom:25px;
+
+}
+
+
+/*====================================
+            Wedding Date
+====================================*/
+
+.wedding-date{
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:20px;
+
+    color:var(--text-color);
+
+    margin-bottom:45px;
+
+}
+
+
+/*====================================
+        Open Invitation Button
+====================================*/
+
+.open-invitation-button{
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:var(--primary-color);
+
+    color:var(--white-color);
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.35s ease;
+
+}
+
+
+.open-invitation-button:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+
+/*====================================
+        Floral Decoration
+====================================*/
+
+.floral-decoration{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:2;
+
+    pointer-events:none;
+
+}
+
+.floral-decoration img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+/*====================================
+            Tablet
+====================================*/
+
+@media (max-width:992px){
+
+    .floral-frame img{
+
+        width:92%;
+
+    }
+
+    .couple-names{
+
+        font-size:70px;
+
+    }
+
+}
+
+
+/*====================================
+            Mobile
+====================================*/
+
+@media (max-width:768px){
+
+    .landing-page{
+
+        padding:20px;
+
+    }
+
+    .floral-frame img{
+
+        width:100%;
+
+    }
+
+    .landing-page-title{
+
+        font-size:12px;
+
+        letter-spacing:4px;
+
+    }
+
+    .couple-names{
+
+        font-size:52px;
+
+        line-height:1.1;
+
+    }
+
+    .wedding-date{
+
+        font-size:18px;
+
+    }
+
+    .open-invitation-button{
+
+        width:220px;
+
+        padding:16px 20px;
+
+        font-size:15px;
+
+    }
+
+    .floral-decoration img{
+
+    width:100%;
+
+}
+
+}
+
+
+
+/*====================================
+        Small Mobile
+====================================*/
+
+@media (max-width:480px){
+
+    .landing-page{
+
+        padding:15px;
+
+    }
+
+    .floral-frame img{
+
+        width:100%;
+
+    }
+
+    .couple-names{
+
+        font-size:40px;
+
+    }
+
+    .landing-page-title{
+
+        font-size:11px;
+
+        letter-spacing:3px;
+
+    }
+
+    .wedding-date{
+
+        font-size:15px;
+
+    }
+
+    .open-invitation-button{
+
+        width:190px;
+
+        font-size:14px;
+
+        padding:14px 18px;
+
+    }
+
+}
+
+
+

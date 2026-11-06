@@ -1,0 +1,766 @@
+/*=========================================
+        GOOGLE FONTS
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/*=========================================
+        RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8F5F0;
+
+    color:#2E3A59;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    display:block;
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+section{
+
+    padding:100px 20px;
+
+}
+
+.invitation-page{
+
+    width:min(1200px,90%);
+    margin:auto;
+
+}
+
+
+
+/*=========================================
+        TYPOGRAPHY
+=========================================*/
+
+h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    font-weight:600;
+
+    color:#16213E;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+p{
+
+    color:#6C6C6C;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+/*=========================================
+        INVITATION COVER
+=========================================*/
+
+.invitation-cover{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.name-frame{
+
+    position:relative;
+
+    width:420px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.name-frame img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.names{
+
+    position:absolute;
+
+    top:46%;
+
+    left:50%;
+
+    width:70%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+}
+.names h1{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    font-weight:600;
+
+    color:#16213E;
+
+    line-height:1;
+
+}
+
+.names h1 span{
+
+    font-size:38px;
+
+    color:#C8A96A;
+
+}
+
+
+/*=========================================
+        CEREMONY INFO
+=========================================*/
+
+.ceremony-info{
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.ceremony-info>p{
+
+    margin-bottom:50px;
+
+}
+
+.couple-names{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:90px;
+
+    flex-wrap:wrap;
+
+}
+
+.person{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.person h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    color:#16213E;
+
+}
+
+.person span{
+
+    margin-top:10px;
+
+    font-size:13px;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#B8A78C;
+
+}
+
+.and-symbol{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+    color:#C8A96A;
+
+}
+
+
+
+/*=========================================
+        FLORAL DIVIDER
+=========================================*/
+
+.floral-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px 0;
+
+}
+
+.floral-divider img{
+
+    width:320px;
+
+}
+
+
+/*=========================================
+        RECEPTION INFORMATION
+=========================================*/
+
+.reception-info{
+
+    text-align:center;
+
+}
+
+.reception-info p{
+
+    color:#6C6C6C;
+
+    margin-bottom:20px;
+
+}
+
+.time{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:58px;
+
+    color:#16213E;
+
+    margin:25px 0;
+
+}
+
+.date{
+
+    width:100%;
+
+    max-width:850px;
+
+    margin:45px auto 0;
+
+    background:#FFFFFF;
+
+    border:1px solid #E6DCCF;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+}
+
+.date span{
+
+    color:#6C6C6C;
+
+    font-size:18px;
+
+}
+
+.date strong{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:80px;
+
+    color:#C8A96A;
+
+}
+
+
+
+/*=========================================
+        COUNTDOWN
+=========================================*/
+
+.countdown-section{
+
+    text-align:center;
+
+}
+
+.countdown{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:60px;
+
+}
+
+.countdown div{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:35px 20px;
+
+    border:1px solid #E6DCCF;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.countdown div:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.10);
+
+    border-color:#C8A96A;
+
+}
+
+.countdown strong{
+
+    display:block;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+    color:#16213E;
+
+    margin-bottom:10px;
+
+}
+
+.countdown span{
+
+    color:#A78C6D;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:13px;
+
+}
+
+
+
+/*=========================================
+        SECTION SPACING
+=========================================*/
+
+.reception-info,
+.countdown-section{
+
+    margin-top:20px;
+
+}
+
+
+/*=========================================
+        CALENDAR
+=========================================*/
+
+.calendar-section{
+
+    text-align:center;
+
+}
+
+.calendar{
+
+    width:100%;
+
+    max-width:850px;
+
+    margin:60px auto 0;
+
+    background:#FFFFFF;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    border:1px solid #E6DCCF;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.calendar-header{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:38px;
+
+    color:#16213E;
+
+    margin-bottom:35px;
+
+}
+
+.calendar-days,
+.calendar-numbers{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:12px;
+
+}
+
+.calendar-days span{
+
+    font-weight:600;
+
+    color:#A78C6D;
+
+}
+
+.calendar-numbers span{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:48px;
+
+    border-radius:12px;
+
+    color:#16213E;
+
+    transition:.3s;
+
+}
+
+.calendar-numbers span:hover{
+
+    background:#F3ECE3;
+
+}
+
+.wedding-day{
+
+    background:#C8A96A;
+
+    color:#fff !important;
+
+    font-weight:600;
+
+}
+
+
+
+/*=========================================
+        LOCATION
+=========================================*/
+
+.location-section{
+
+    text-align:center;
+
+}
+
+.location-text{
+
+    margin-bottom:35px;
+
+}
+
+.map-container{
+
+    width:100%;
+
+    max-width:950px;
+
+    margin:auto;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    border:1px solid #E6DCCF;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.map-container iframe{
+
+    width:100%;
+
+    height:450px;
+
+    border:0;
+
+}
+
+.location-btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#16213E;
+
+    color:#fff;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.location-btn:hover{
+
+    background:#C8A96A;
+
+    color:#16213E;
+
+}
+
+
+body{
+
+    background:#F8F5F0
+    url("../assets/images/floral-bg.png")
+    repeat;
+
+    background-size:550px;
+
+}
+
+
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+    .countdown{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .couple-names{
+
+        gap:50px;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    section{
+
+        padding:80px 20px;
+
+    }
+
+    h2{
+
+        font-size:40px;
+
+    }
+
+    .names h1{
+
+        font-size:52px;
+
+    }
+
+    .person h3{
+
+        font-size:48px;
+
+    }
+
+    .and-symbol{
+
+        font-size:45px;
+
+    }
+
+    .date{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+    .date strong{
+
+        font-size:60px;
+
+    }
+
+    .calendar{
+
+        padding:25px;
+
+    }
+
+    .calendar-header{
+
+        font-size:32px;
+
+    }
+
+    .map-container iframe{
+
+        height:320px;
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .countdown{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .calendar-days,
+    .calendar-numbers{
+
+        gap:6px;
+
+        font-size:13px;
+
+    }
+
+    .calendar-numbers span{
+
+        height:38px;
+
+    }
+
+    .names h1{
+
+        font-size:40px;
+
+    }
+
+    .person h3{
+
+        font-size:36px;
+
+    }
+
+    .location-btn{
+
+        width:100%;
+
+        max-width:260px;
+
+    }
+
+}

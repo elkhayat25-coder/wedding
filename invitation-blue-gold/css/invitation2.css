@@ -1,0 +1,903 @@
+/*=====================================
+            GOOGLE FONTS
+======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+
+
+/*=====================================
+                RESET
+======================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:#FBF8F3;
+
+    color:#17345F;
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+    position:relative;
+
+}
+
+
+/*=====================================
+      WATER COLOR BACKGROUND
+======================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:url("../assets/images/floral-background.png");
+
+    background-size:420px;
+
+    background-repeat:repeat;
+
+    opacity:.06;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+
+/*=====================================
+            MAIN CONTAINER
+======================================*/
+
+.invitation-page{
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+}
+
+
+/*=====================================
+            GLOBAL
+======================================*/
+
+section{
+
+    padding:90px 20px;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+/*=====================================
+            HEADINGS
+======================================*/
+
+h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    font-weight:600;
+
+    color:#17345F;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+p{
+
+    font-size:21px;
+
+    line-height:1.9;
+
+    color:#5D6675;
+
+    text-align:center;
+
+}
+
+
+/*=====================================
+            COVER
+======================================*/
+
+.invitation-cover{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.name-frame{
+
+    width:470px;
+
+    position:relative;
+
+    margin:auto;
+
+}
+
+.name-frame img{
+
+    width:100%;
+
+}
+
+.names{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:100%;
+
+}
+
+.names h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#17345F;
+
+    text-align:center;
+
+    font-size:58px;
+
+    font-weight:500;
+
+    line-height:1.35;
+
+}
+
+.names span{
+
+    display:block;
+
+    color:#C7A35A;
+
+    font-size:34px;
+
+    margin:10px 0;
+
+}
+
+
+
+
+/*=====================================
+        CEREMONY INFORMATION
+======================================*/
+
+.ceremony-info{
+
+    text-align:center;
+
+}
+
+.ceremony-info p{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+}
+
+.couple-names{
+
+    margin-top:70px;
+
+}
+
+.person{
+
+    margin:45px 0;
+
+}
+
+.person h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    font-weight:500;
+
+    color:#17345F;
+
+    letter-spacing:2px;
+
+}
+
+.person span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:15px;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    color:#B79B67;
+
+    font-family:'Inter',sans-serif;
+
+}
+
+.and-symbol{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    color:#C7A35A;
+
+    margin:25px 0;
+
+}
+
+
+
+/*=====================================
+          FLORAL DIVIDER
+======================================*/
+
+.floral-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:90px auto;
+
+}
+
+.floral-divider img{
+
+    width:260px;
+
+}
+
+
+
+/*=====================================
+        RECEPTION TITLE
+======================================*/
+
+.reception-info{
+
+    text-align:center;
+
+}
+
+.reception-info p{
+
+    max-width:700px;
+
+    margin:0 auto 20px;
+
+}
+
+.time{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:68px;
+
+    color:#17345F;
+
+    margin:40px 0 10px;
+
+}
+
+.date{
+
+    margin-top:20px;
+
+}
+
+.date span{
+
+    display:block;
+
+    font-size:24px;
+
+    color:#777;
+
+    margin:8px 0;
+
+}
+
+.date strong{
+
+    display:block;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:88px;
+
+    color:#C7A35A;
+
+    line-height:1;
+
+    margin:12px 0;
+
+}
+
+/*=====================================
+            COUNTDOWN
+======================================*/
+
+.countdown-section{
+
+    text-align:center;
+
+}
+
+.countdown{
+
+    margin-top:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:45px;
+
+    flex-wrap:wrap;
+
+}
+
+.countdown div{
+
+    min-width:90px;
+
+}
+
+.countdown strong{
+
+    display:block;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:62px;
+
+    color:#17345F;
+
+    font-weight:600;
+
+}
+
+.countdown span{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#B79B67;
+
+}
+
+
+
+/*=====================================
+            CALENDAR
+======================================*/
+
+.calendar-section{
+
+    text-align:center;
+
+}
+
+.calendar{
+
+    max-width:500px;
+
+    margin:60px auto;
+
+}
+
+.calendar-header{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:40px;
+
+    color:#17345F;
+
+    margin-bottom:25px;
+
+}
+
+.calendar-days,
+
+.calendar-numbers{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:12px;
+
+}
+
+.calendar-days span{
+
+    color:#B79B67;
+
+    font-weight:600;
+
+    font-size:15px;
+
+}
+
+.calendar-numbers span{
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    color:#17345F;
+
+    transition:.3s;
+
+}
+
+.calendar-numbers span:hover{
+
+    background:#EFE8DC;
+
+}
+
+.wedding-day{
+
+    background:#C7A35A;
+
+    color:#fff !important;
+
+}
+
+
+
+/*=====================================
+            LOCATION
+======================================*/
+
+.location-section{
+
+    text-align:center;
+
+}
+
+.location-text{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+}
+
+.map-container{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.map-container iframe{
+
+    width:100%;
+
+    height:420px;
+
+    border:0;
+
+}
+
+.location-btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:16px 42px;
+
+    background:#17345F;
+
+    color:#fff;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.location-btn:hover{
+
+    background:#C7A35A;
+
+    color:#17345F;
+
+}
+
+/*=====================================
+            FOOTER
+======================================*/
+
+footer{
+
+    text-align:center;
+
+    padding:80px 20px 60px;
+
+}
+
+footer h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    font-weight:500;
+
+    color:#17345F;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#8A8175;
+
+    font-size:18px;
+
+}
+
+
+
+/*=====================================
+        SMOOTH ANIMATION
+======================================*/
+
+.invitation-cover,
+.ceremony-info,
+.reception-info,
+.countdown-section,
+.calendar-section,
+.location-section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/*=====================================
+        SECTION SPACING
+======================================*/
+
+section{
+
+    padding:110px 20px;
+
+}
+
+.floral-divider{
+
+    margin:70px auto;
+
+}
+
+
+
+/*=====================================
+            RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+    h2{
+
+        font-size:42px;
+
+    }
+
+    .person h3{
+
+        font-size:60px;
+
+    }
+
+    .time{
+
+        font-size:58px;
+
+    }
+
+    .date strong{
+
+        font-size:70px;
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    section{
+
+        padding:80px 20px;
+
+    }
+
+    .name-frame{
+
+        width:330px;
+
+    }
+
+    .names h1{
+
+        font-size:42px;
+
+    }
+
+    .names span{
+
+        font-size:28px;
+
+    }
+
+    h2{
+
+        font-size:34px;
+
+        letter-spacing:3px;
+
+    }
+
+    p{
+
+        font-size:18px;
+
+    }
+
+    .person h3{
+
+        font-size:46px;
+
+    }
+
+    .time{
+
+        font-size:48px;
+
+    }
+
+    .date strong{
+
+        font-size:56px;
+
+    }
+
+    .calendar{
+
+        max-width:100%;
+
+    }
+
+    .calendar-days span,
+
+    .calendar-numbers span{
+
+        font-size:13px;
+
+    }
+
+    .map-container iframe{
+
+        height:300px;
+
+    }
+
+}
+
+
+
+@media(max-width:480px){
+
+    .countdown{
+
+        gap:25px;
+
+    }
+
+    .countdown strong{
+
+        font-size:42px;
+
+    }
+
+    .countdown span{
+
+        font-size:12px;
+
+    }
+
+    .location-btn{
+
+        width:100%;
+
+        max-width:260px;
+
+    }
+
+    footer h3{
+
+        font-size:32px;
+
+    }
+
+}
+
+
+body{
+
+    background:#F8F5F0
+    url("../assets/images/floral-backgroung.png")
+    repeat;
+
+    background-size:550px;
+
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: #c58b5a;
+    color: white;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.music-overlay {
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+
+.tap-open {
+
+    padding: 15px 35px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #c58b5a;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+}
+
